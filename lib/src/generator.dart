@@ -36,10 +36,11 @@ class QrGenerator {
 
     /// Defines an output buffer
     var output = '';
-    var BLACK = true, WHITE = false;
+    var black = true, white = false;
 
     /// Convert the qrImage to redable data set
     var moduleCount = qrImage.moduleCount;
+    // ignore: invalid_use_of_visible_for_testing_member
     var moduleData = qrImage.qrModules.toList();
 
     /// Defines a color pallet to draw the ASCII qr output
@@ -66,14 +67,14 @@ class QrGenerator {
         /// Based on the module state, true or false we draw black or white square from the matrix
         /// for each column in the current row.
         for (var col = 0; col < moduleCount; col++) {
-          if (moduleData[row][col] == WHITE &&
-              moduleData[row + 1][col] == WHITE) {
+          if (moduleData[row][col] == white &&
+              moduleData[row + 1][col] == white) {
             output += platte['WHITE_ALL']!;
-          } else if (moduleData[row][col] == WHITE &&
-              moduleData[row + 1][col] == BLACK) {
+          } else if (moduleData[row][col] == white &&
+              moduleData[row + 1][col] == black) {
             output += platte['WHITE_BLACK']!;
-          } else if (moduleData[row][col] == BLACK &&
-              moduleData[row + 1][col] == WHITE) {
+          } else if (moduleData[row][col] == black &&
+              moduleData[row + 1][col] == white) {
             output += platte['BLACK_WHITE']!;
           } else {
             output += platte['BLACK_ALL']!;
