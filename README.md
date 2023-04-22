@@ -1,6 +1,6 @@
 # Console QR
 
-console_qr package lets you generate text based qr codes, useful for printing scannable terminal
+console_qr package lets you generate text based qr codes, useful for printing  terminal codes
 
 ## Installation
 
