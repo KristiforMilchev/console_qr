@@ -149,10 +149,10 @@
       "name": "console_qr",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2023-04-22T13:03:24.386640Z",
+  "generated": "2023-04-22T13:05:29.303649Z",
   "generator": "pub",
   "generatorVersion": "3.1.0-22.0.dev"
 }
