@@ -3,16 +3,12 @@
 
 console_qr package lets you generate text based qr codes, useful for printing scannable terminal
 
-
-
 ## Installation
 
-1. Add the latest version of package to your pubspec.yaml (and run`flutter pub get`):
-```yaml
+ ```yaml
 dependencies:
   console_qr: ^0.0.1
 ```
-2. Import the package and use it in your Flutter App.
 ```dart
 import 'package:console_qr/console_qr.dart';
 ```
