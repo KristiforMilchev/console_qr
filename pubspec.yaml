@@ -1,5 +1,5 @@
 name: console_qr
-description: A new Flutter package project.
+description: A library that allows you to create text based QR codes, for terminals and other text printers.
 version: 0.0.1
 homepage: https://github.com/KristiforMilchev/console_qr
 repository: https://github.com/KristiforMilchev/console_qr
